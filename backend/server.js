@@ -12,7 +12,7 @@ testPoolConnection();
 // Middleware
 const app = express();
 app.use(cors({
-  origin: "https://byte-news-puce.vercel.app",
+  origin: "*",
   credentials: true,
 }));
 app.use(json({ limit: "100mb" }));
